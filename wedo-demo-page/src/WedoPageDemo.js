@@ -1,29 +1,22 @@
 import './WedoPageDemo.css';
 import WedoHeader from "./components/WedoHeader";
+import WedoBody from "./components/WedoBody";
 import WedoFooter from "./components/WedoFooter";
 
 const WedoPageDemo = () => {
 
   return (
     <html>
-      <header>
+      <div>
         <WedoHeader></WedoHeader>
-      </header>
-
-      <footer className='footerStyle'>
+      </div>
+      <div>
+        <WedoBody></WedoBody>
+      </div>
+      <div>
         <WedoFooter></WedoFooter>
-      </footer>
-
-
-
+      </div>
     </html>
-
-
-
-    //FOOTER
-
-
-
   );
 };
 export default WedoPageDemo;
