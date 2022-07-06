@@ -6,6 +6,8 @@ import Link from '@mui/material/Link';
 import Typography from '@mui/material/Typography';
 import { ThemeProvider } from '@mui/material';
 import { createTheme } from '@mui/material';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import YouTubeIcon from '@mui/icons-material/YouTube';
 
 const theme = createTheme({
     palette: {
@@ -18,6 +20,16 @@ const theme = createTheme({
     }
 })
 
+const handleLinkedIn = e => {
+    e.preventDefault()
+    window.open("https://www.linkedin.com/company/hscredit/", "_blank")
+}
+
+const handleYoutube = e => {
+    e.preventDefault()
+    window.open("https://www.youtube.com/user/nzeimer", "_blank")
+}
+
 const WedoFooter = () => {
 
     return (
@@ -28,24 +40,32 @@ const WedoFooter = () => {
                 bgcolor="primary.main"
                 color="white">
                 <Container maxWidth="xl" >
-                    <Typography
-                        pb={2}
-                        variant="h6"
-                        noWrap
-                        component="a"
-                        href="/"
-                        sx={{
-                            display: { xs: 'none', md: 'flex' },
-                            fontFamily: 'monospace',
-                            fontWeight: 700,
-                            letterSpacing: '.3rem',
-                            color: 'inherit',
-                            textDecoration: 'none',
+                    <Grid container spacing={4}>
+                        <Grid item xs={8}>
+                            <Typography
+                                pb={2}
+                                variant="h6"
+                                noWrap
+                                component="a"
+                                href="/"
+                                sx={{
+                                    display: { xs: 'none', md: 'flex' },
+                                    fontFamily: 'monospace',
+                                    fontWeight: 700,
+                                    letterSpacing: '.3rem',
+                                    color: 'inherit',
+                                    textDecoration: 'none',
 
-                        }}
-                    >
-                        WeDo.coin
-                    </Typography>
+                                }}
+                            >
+                                WeDo.coin
+                            </Typography>
+                        </Grid>
+                        <Grid item xs={4}>
+                            <LinkedInIcon fontSize="large" onClick={handleLinkedIn} />
+                            <YouTubeIcon fontSize="large" onClick={handleYoutube} />
+                        </Grid>
+                    </Grid>
 
                     <Grid container spacing={5}>
                         <Grid item xs={12} sm={4}>
