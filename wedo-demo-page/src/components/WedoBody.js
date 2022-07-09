@@ -31,7 +31,7 @@ const WedoBody = () => {
                 <Grid container spacing={12}
                     justifyContent="space-between"
                     alignItems="center">
-                    <Grid item xs={7}>
+                    <Grid item xs={5.8}>
                         <Stack spacing={0}>
                             <Skeleton animation="wave" sx={{ bgcolor: deepPurple[200] }} variant="text" height={150} />
                             <Skeleton animation="wave" sx={{ bgcolor: deepPurple[200] }} variant="rectangular" height={250} />
