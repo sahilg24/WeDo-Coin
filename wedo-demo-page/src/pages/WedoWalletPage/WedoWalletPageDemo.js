@@ -1,4 +1,5 @@
 import WedoWalletHeader from "./components/WedoWalletHeader";
+import WedoWalletBody from "./components/WedoWalletBody";
 
 const WedoWalletPageDemo = () => {
 
@@ -6,6 +7,9 @@ const WedoWalletPageDemo = () => {
         <html>
             <div>
                 <WedoWalletHeader></WedoWalletHeader>
+            </div>
+            <div>
+                <WedoWalletBody></WedoWalletBody>
             </div>
         </html>
     );
