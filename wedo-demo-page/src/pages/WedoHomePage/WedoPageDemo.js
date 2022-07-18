@@ -1,4 +1,3 @@
-import './WedoPageDemo.css';
 import WedoHeader from "./components/WedoHeader";
 import WedoBody from "./components/WedoBody";
 import WedoFooter from "./components/WedoFooter";

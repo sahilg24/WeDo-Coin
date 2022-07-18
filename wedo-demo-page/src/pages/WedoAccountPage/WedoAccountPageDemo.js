@@ -1,8 +1,8 @@
-import PropTypes from 'prop-types';
-import Dashboard from '../Dashboard/Dashboard';
-import Login from '../Login/Login';
-import Preferences from '../Preferences/Preferences';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+// import PropTypes from 'prop-types';
+// import Dashboard from '../Dashboard/Dashboard';
+// import Login from '../Login/Login';
+// import Preferences from '../Preferences/Preferences';
+// import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import React, { useState } from 'react';
 
 
@@ -16,7 +16,7 @@ const WedoAccountPageDemo = () => {
                 <label>
                     <p>Username</p>
                     <input type="text" />
-                 </label>
+                </label>
                 <label>
                     <p>Password</p>
                     <input type="password" />
