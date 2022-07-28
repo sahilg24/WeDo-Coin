@@ -1,6 +1,5 @@
 import WedoAccountMenu from "./components/WedoAccountMenu";
 
-
 const WedoAccountPageDemo = () => {
 
     return (
@@ -8,7 +7,6 @@ const WedoAccountPageDemo = () => {
             <div>
                 <WedoAccountMenu></WedoAccountMenu>
             </div>
-
         </html>
     );
 };
